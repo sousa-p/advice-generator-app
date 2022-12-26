@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body,
+.container,
+.advice,
+.advice > .text,
+#randomAdvice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background-color: hsl(218, 23%, 16%);
+}
+
+
+.advice {
+    width: 33.333vw;
+    max-width: 550px;
+    min-width: 375px;
+    height: 350px;
+    padding: 20px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 12px;
+    box-shadow: 25px 25px 50px #00000025;
+}
+
+.advice > .id {
+    font-size: .8em;
+    letter-spacing: 2px;
+    color: hsl(150, 100%, 66%);
+    margin-bottom: 15px;
+}
+
+.advice > .text {
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+}
+
+.advice > .divider {
+    width: 100%;
+    height: 16px;
+    background-position-x: center;
+    background-image: url('../images/pattern-divider-desktop.svg');
+}
+
+#randomAdvice {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    position: relative;
+    bottom: 25px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+#randomAdvice:hover {
+    box-shadow: 0 0 25px hsl(150, 100%, 66%);
+}
+
+#randomAdvice > img {
+    width: 40%;
+}
+
+.attribution { color: hsl(219, 19%, 34%); font-size:  11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
